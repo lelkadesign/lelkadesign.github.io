@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Urban noticings by Ella</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style media="screen">
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.fullpage.js"></script>
+      <script>
+          $(document).ready(function(){
+            // $('html,body').animate({scrollTop: 0},1000);
+            // console.log( $(window).height());
+            // var scrollPos = 0;
+             $("#link1").click(function(){
+                  $.fn.fullpage.moveSectionDown();
+                  // scrollPos = scrollPos + $(window).height();
+                  // $('html,body').animate({scrollTop:scrollPos},1000);
+                  // console.log(scrollPos);
+
+                  });
+            });
+
+
+      </script>
+
+  </head>
+
+  <body>
+    <div id="fullpage">
+              <div class="section" id="section0">
+                  <img src="cover.jpg">
+                  <h1># Textures</h1>
+              </div>
+
+              <div class="section" id="section1">
+                  <video id="video" preload data-autoplay muted loop>
+                    <source src="video_40.mp4" type="video/mp4">
+                    Video not supported
+                  </video>
+                  <script>
+                  $('#video').attr({'autoplay':'true'});
+                  </script>
+              </div>
+
+              <div class="section" id="section2">
+                  <img src="slide1.jpg">
+                  <h1></h1>
+              </div>
+
+              <div class="section" id="section3">
+                  <img src="slide2.jpg">
+                  <h1></h1>
+              </div>
+
+              <div class="section" id="section4">
+                  <img src="slide3.jpg">
+                  <h1></h1>
+              </div>
+
+              <div class="section" id="section5">
+                  <img src="slide4.jpg">
+                  <h1></h1>
+              </div>
+
+              <div class="section" id="section6">
+                  <img src="slide5.jpg">
+                  <h1></h1>
+              </div>
+
+
+    </div>
+
+        <div class="arrowContainer">
+          <a id="link1">
+              <div class="button">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <script>
+                $('#video').attr({'data-autoplay':'true'});
+                </script>
+              </div>
+          </a>
+        </div>
+
+    <script>
+        $('#fullpage').fullpage();
+    </script>
+
+
+  </body>
+
+</html>
